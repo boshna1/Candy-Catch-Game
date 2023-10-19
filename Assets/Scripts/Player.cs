@@ -26,4 +26,8 @@ public class Player : MonoBehaviour
     {
         _direction = directionInput;
     }
+    public void resetPlayerControls()
+    {
+        Input.Initialize(this);
+    }
 }

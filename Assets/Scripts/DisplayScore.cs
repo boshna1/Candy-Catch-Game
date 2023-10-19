@@ -28,17 +28,26 @@ public class DisplayScore : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (score <= 15)
-            message = "Sadness";
-        if (score >= 15 && score < 35)
-            message = "Sugar Rush";
-        if (score >= 35 && score <= 50)
-            message = "Halloween";
-        if (score > 50)
-            message = "Candy Craze";
-        if (score <= 15)
         _text.text = "Score:" + (score.ToString());
-        if (GameOver) 
+        if (score <= 15)
+        {
+            message = "Sadness";
+        }
+        if (score >= 15 && score < 35)
+        {
+            message = "Sugar Rush";
+        }
+            
+        if (score >= 35 && score <= 50)
+        { 
+            message = "Halloween"; 
+        }
+            
+        if (score > 50)
+        {
+            message = "Candy Craze";
+        }
+        if (GameOver == true) 
         {
             _textOver.text = "You got a Score of\n" + (score.ToString() + "\n" + message);
             Input.DisablePlayerControls();
@@ -58,9 +67,12 @@ public class DisplayScore : MonoBehaviour
         GameOver = true;
     }
     
-    public void reset()
+    public void resetScore()
     {
         score = 0;
         message = "";
+        GameOver = false;
     }
+
+   
 }
