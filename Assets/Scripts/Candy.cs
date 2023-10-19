@@ -13,7 +13,7 @@ public class Candy : MonoBehaviour
     Quaternion Rotation;
     private int CandyCount = 0;
     private static Candy instance;
-    //private 
+    //private int Eaten;
 
     // Start is called before the first frame update
     private void Start()
@@ -55,7 +55,7 @@ public class Candy : MonoBehaviour
             }
             Instantiate(CandyType[tempCandyType], new Vector3(x, y), Rotation);
             CandyCount++;
-            //if ()
+            //if (Eaten >=14)
             //{
                 //DisplayScore.instance.CheckGame();
             //}
@@ -70,6 +70,6 @@ public class Candy : MonoBehaviour
     }
     //public void addEaten()
     //{
-
+    //Eaten++;
     //}
 }
