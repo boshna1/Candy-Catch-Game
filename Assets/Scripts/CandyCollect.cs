@@ -34,6 +34,7 @@ public class CandyCollect : MonoBehaviour
         {
             Destroy(gameObject);
             DisplayScore.instance.addScore(4);
+            //Candy.instance.
         }
         if (collision.transform.tag == "Player" && this.transform.tag == "+1")
         {
