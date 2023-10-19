@@ -17,7 +17,10 @@ public class Input
         };
 
     }
-
+    public static void DisablePlayerControls()
+    {
+        _playerControls.Player.Disable();
+    }
     public static void SetPlayerControls()
     {
         _playerControls.Player.Enable();
