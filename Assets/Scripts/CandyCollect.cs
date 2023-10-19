@@ -13,32 +13,32 @@ public class CandyCollect : MonoBehaviour
         if (collision.transform.tag == "Player" && this.transform.tag == "+10")
         {
             Destroy(gameObject);
-            DS.addScore(10);
+            DisplayScore.instance.addScore(10);
         }
         if (collision.transform.tag == "Player" && this.transform.tag == "+8")
         {
             Destroy(gameObject);
-            DS.addScore(8);
+            DisplayScore.instance.addScore(8);
         }
         if (collision.transform.tag == "Player" && this.transform.tag == "+6")
         {
             Destroy(gameObject);
-            DS.addScore(6);
+            DisplayScore.instance.addScore(6);
         }
         if (collision.transform.tag == "Player" && this.transform.tag == "+5")
         {
             Destroy(gameObject);
-            DS.addScore(5);
+            DisplayScore.instance.addScore(5);
         }
         if (collision.transform.tag == "Player" && this.transform.tag == "+4")
         {
             Destroy(gameObject);
-            DS.addScore(4);
+            DisplayScore.instance.addScore(4);
         }
         if (collision.transform.tag == "Player" && this.transform.tag == "+1")
         {
             Destroy(gameObject);
-            DS.addScore(1);
+            DisplayScore.instance.addScore(1);
         }
         if (collision.transform.tag == "Ground")
         {

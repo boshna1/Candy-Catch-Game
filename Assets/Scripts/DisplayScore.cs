@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class DisplayScore : MonoBehaviour
 {
-
+    public static DisplayScore instance;
     public Text _text;
     public Text _textOver;
     private int score;
@@ -22,7 +22,7 @@ public class DisplayScore : MonoBehaviour
         Restart.GetComponent<Button>().enabled = false;
         Restart.GetComponentInChildren<Text>().enabled = false;
         Restart.GetComponent<Image>().enabled = false;
-        _text.text = "Score:" + (score.ToString()) + message;
+        instance = this;
     }
 
     // Update is called once per frame
@@ -59,7 +59,7 @@ public class DisplayScore : MonoBehaviour
 
     public void addScore(int add)
     {
-        score += add;
+        score = score + add;
     }
 
     public void CheckGame()

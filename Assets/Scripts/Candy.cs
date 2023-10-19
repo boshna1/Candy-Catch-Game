@@ -12,7 +12,7 @@ public class Candy : MonoBehaviour
     private int tempCandyType;
     Quaternion Rotation;
     private int CandyCount = 0;
-    private DisplayScore DS = new DisplayScore();
+    private static DisplayScore DS;
     private string message;
     private Text _text;
 
