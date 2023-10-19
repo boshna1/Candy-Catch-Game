@@ -56,7 +56,7 @@ public class Candy : MonoBehaviour
         }
         if (CandyCount >= 14)
         {
-            DS.CheckGame();
+            DisplayScore.instance.CheckGame();
         }
     }
     public void resetCandy()
